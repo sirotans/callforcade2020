@@ -1,10 +1,3 @@
-### まずは準備
-このスターターキットは、IBM Cloudのクラウド環境とPCでやることが前提になっています。
-準備として、IBM Cloudのアカウントが必要になりますが、ライトアカウントという無料登録が可能なアカウントがあります。
-登録方法は先ほどの[Call for Codeのサイト](https://developer.ibm.com/jp/callforcode/)や、[こちらの記事](https://qiita.com/kmht/items/e77137a4af657777a7f9)をご参考に。
-それから後で必要になるので、この[スターターキット](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020)をgithubからダウンロードしておきましょう。
-
-
 ### 早速作ってみる
 チャットボットはWatson Assistantを使います。
 Watson Assistantについて詳しくは[こちら](https://www.ibm.com/watson/jp-ja/developercloud/conversation.html)や[こちらの記事](https://qiita.com/ishida330/items/666ced65a04243ce286c)をご参照ください。
