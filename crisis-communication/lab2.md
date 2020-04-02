@@ -1,8 +1,6 @@
 
 ### チャットボットをWebに公開してみる
-
-長くなってきましたが、、、これで最後です。
-これだけだと、自分しか見えないので、Web公開します。
+今のままだと自分しか見えないので、Web公開します。
 チュートリアルの[Integrate a COVID-19 crisis communication chatbot on a website](https://developer.ibm.com/tutorials/create-a-covid-19-chatbot-embedded-on-a-website/)に手順があります。
 
 準備として、Watson Assistantのcredential情報をメモします。
@@ -109,3 +107,6 @@ $ ibmcloud cf install
 ```
 
 5. IBM Cloudのメニュー→リソース・リスト→Cloud Foundryアプリ　にアプリができていると思います。クリックして画面右上の「アプリURLにアクセス」をクリック。チャットボットが表示されていたら完成です。
+
+
+[最初に戻ります。](https://github.com/sirotans/callforcode2020/blob/master/crisis-communication/readme.md)
