@@ -3,7 +3,7 @@
 Watson Assistantについて詳しくは[こちら](https://www.ibm.com/watson/jp-ja/developercloud/conversation.html)や[こちらの記事](https://qiita.com/ishida330/items/666ced65a04243ce286c)をご参照ください。
 以下は手順です。手順の詳細や画面キャプチャは[チュートリアル](https://developer.ibm.com/tutorials/crisis-communication-chatbot-watson-assistant-webhook-integration-discovery-covid-data/)をご覧ください。なお、以下の数字はチュートリアルでの数字に対応しています。
 
-##### Create your chatbot by setting up a Watson Assistant instance
+#### Create your chatbot by setting up a Watson Assistant instance
 1. IBMクラウドのカタログから、Watson Assistantを選び、以下項目を埋めて「作成」をクリック
 - 地域: どこでも良いですが、「東京」を選択します
 - プラン: ライト
@@ -32,14 +32,14 @@ Watson Assistantについて詳しくは[こちら](https://www.ibm.com/watson/j
 
 とりあえず動いたので、お疲れ様でした。
 
-### 外部のデータソースと連携します
+### 外部のデータソースと連携する
 ここまででチャットボットらしきものは動いていると思います。ただ、これだと刻一刻と変わるコロナウィルスの状況・データには対応できないので、外部のデータソースと連携させます。
 ここではWatson Discoveryというコグニティブなテキスト検索サービスと連携します。
 Watson Discoveryについて詳しくは[こちら](https://www.ibm.com/watson/jp-ja/developercloud/discovery.html)や[こちらの記事](https://qiita.com/ishida330/items/b823d7c5b55806f04242)をご参照ください。
 
 以下は手順です。手順の詳細や画面キャプチャは[チュートリアル](https://developer.ibm.com/tutorials/crisis-communication-chatbot-watson-assistant-webhook-integration-discovery-covid-data/)をご覧ください。
 
-##### Integrate your chatbot with data sources
+#### Integrate your chatbot with data sources
 1. IBM Cloudのカタログから、Discoveryをクリック
 2. 以下項目を埋めて「作成」をクリック。**作成完了に数分かかります。**
 - 地域: どこでも良いですが、「東京」を選択
@@ -54,7 +54,7 @@ Watson Discoveryについて詳しくは[こちら](https://www.ibm.com/watson/j
 ### サーバーレスを立ち上げる
 今度はサーバーレスを立ち上げます。IBM CloudではIBM Cloud Functionsというサービスがあります。
 
-##### Create Cloud Functions
+#### Create Cloud Functions
 1. IBM Cloudのカタログから、IBM Cloud Functionsをクリック。カタログから検索する場合は、左メニューの下の方の「価格プラン」に「ライト」のチェックを外して検索しましょう。ライトプランのサービスではありませんが、ライトアカウントでも作成はできます。おそらく課金もされていないはず・・・。
 2. 「作成の開始」をクリック
 3. 「Create Action」をクリック
@@ -74,7 +74,7 @@ Watson Discoveryについて詳しくは[こちら](https://www.ibm.com/watson/j
 
 ### webhookでWatson Assistantとデータソースを連携
 
-##### Integrate data sources via a Watson Assistant webhook
+#### Integrate data sources via a Watson Assistant webhook
 1. 先ほど(「Create your chatbot by setting up a Watson Assistant instance」手順4.)の作成済みAssistantの画面に戻ります。
 2. 作成済みのダイヤログスキルをクリックし、左メニューから「Options」をクリック
 3. その下の「Webhooks」をクリック。URLのところに、先ほどの手順10.でメモしたURLを貼り付けし、**URLの最後に.jsonをつける(忘れずに)**
@@ -90,3 +90,5 @@ Watson Discoveryについて詳しくは[こちら](https://www.ibm.com/watson/j
 「How many cases in the US?」と聞いてみてください。
 
 お疲れ様でした！
+
+一休みしたら、[Webへ公開](https://github.com/sirotans/callforcode2020/blob/master/crisis-communication/lab2.md)してみましょう。
