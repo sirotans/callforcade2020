@@ -25,7 +25,7 @@
 
 ### サンプルアプリの作成
 
-1. [Crisis Communication](https://github.com/sirotans/callforcode2020/blob/master/README.md)
+1. [Crisis Communication](https://github.com/sirotans/callforcode2020/blob/master/crisis-communication/readme.md)
 2. Remote Education
 3. Community corporation
 
