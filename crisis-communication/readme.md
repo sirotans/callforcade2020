@@ -27,4 +27,4 @@
 11. Webサーバー(Node.js)がチャットの返答を表示
 
 
-[最初に戻ります](https://github.com/sirotans/callforcode2020/blob/master/README.md)
+[最初に戻ります](https://github.com/sirotans/callforcode2020/blob/master/README.md#サンプルアプリの作成)
