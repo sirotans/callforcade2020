@@ -38,30 +38,30 @@ Watson Assistantについて詳しくは[こちら](https://www.ibm.com/watson/j
 
 ##### Create your chatbot by setting up a Watson Assistant instance
 1. IBMクラウドのカタログから、Watson Assistantを選び、以下項目を埋めて「作成」をクリック
-・地域: どこでも良いですが、「東京」を選択します
-・プラン: ライト
-・サービス名: 任意の名前
-・リソースグループ: Default
+- 地域: どこでも良いですが、「東京」を選択します
+- プラン: ライト
+- サービス名: 任意の名前
+- リソースグループ: Default
 
 2. 「Watson Assistantの起動」をクリック
 3. 「Create Assistant」をクリック
 4. 以下を記載して「Create assistant」をクリック
-・Name: COVID Crisis Communication などの任意の名前
+- Name: COVID Crisis Communication などの任意の名前
 
 5. 「Add dialog skill」をクリック。そして「Import skill」タブをクリックして、「Choose JSON File」をクリック、「skill-CDC-COVID-FAQ.json」ファイルを選択して「Import」をクリック。このファイルは先ほどのgithubからダウンロードしたディレクトリの以下にあります。
 <ダウンロードフォルダ>/Solution-Starter-Kit-Communication-2020-master/starter-kit/assistant/skill-CDC-COVID-FAQ.json
 
 6. Assistantのページに戻り、右上のActionメニュー(⋮)から「Settings」をクリック
 7. 左のメニューで「API Details」を選択し、以下をメモ(後で使う)
-・Assistant ID
-・Assistant URL
-・Api Key
+- Assistant ID
+- Assistant URL
+- Api Key
 
 8. 右上のXを押して閉じ、アシスタント画面に戻り、右下の「Preview Link」ボタンを押すと、「Try it out and share the link」の下にURLが表示され、クリックするとチャットボットのテスト画面が現れます。
 9. 質問してみましょう。英語onlyですが・・・
 例)
-・What is COVID-19?
-・Can you tell me about symptoms
+- What is COVID-19?
+- Can you tell me about symptoms
 
 とりあえず動いたので、お疲れ様でした。
 
@@ -75,10 +75,10 @@ Watson Discoveryについて詳しくは[こちら](https://www.ibm.com/watson/j
 ##### Integrate your chatbot with data sources
 1. IBM Cloudのカタログから、Discoveryをクリック
 2. 以下項目を埋めて「作成」をクリック。**作成完了に数分かかります。**
-・地域: どこでも良いですが、「東京」を選択
-・プラン: ライト
-・サービス名: 任意の名前
-・リソースグループ: Default
+- 地域: どこでも良いですが、「東京」を選択
+- プラン: ライト
+- サービス名: 任意の名前
+- リソースグループ: Default
 
 3. Watson Discoveryが作成されると、「資格情報」にAPI keyとURLが表示されるのでメモ。「Watson Discoveryの起動」をクリック
 4. Watson Discovery Newsをクリック。これは世界中のニュース記事を集めてデータソースとしているサービスです。プルダウンからJapaneseも選べますが、ここではEnglishのままで。
@@ -98,10 +98,10 @@ Watson Discoveryについて詳しくは[こちら](https://www.ibm.com/watson/j
 6. コードの説明。COVID-19 APIか、Watson Discovery APIをコールできる。type=apiとセットすると、COVID-19 APIをコールする
 7. type=api and country=US とセットしてAPIコールすると、アメリカの統計情報が戻る。ちなみに日本はcountry=Japan
 8. ここではサーバーレスでWatson Discovery APIをコールします。左メニューの「Parameters」を選択し、以下を記入します。**値は" "で囲う必要があります。**
-・api_key: "Watson Discoveryのメニューでメモしたもの(「Integrate your chatbot with data sources」手順3)"
-・url: "同じくメモしたもの(手順3)"
-・collection_id: "同じくメモしたもの(手順5)"
-・env_id: "同じくメモしたenvironment_id(手順5)"
+- api_key: "Watson Discoveryのメニューでメモしたもの(「Integrate your chatbot with data sources」手順3)"
+- url: "同じくメモしたもの(手順3)"
+- collection_id: "同じくメモしたもの(手順5)"
+- env_id: "同じくメモしたenvironment_id(手順5)"
 9. 左メニュー「Endpoint」を選択し、「Web Action」→「Enable as Web Action」にチェック
 10. URLをメモ
 
@@ -140,13 +140,13 @@ Watson Discoveryについて詳しくは[こちら](https://www.ibm.com/watson/j
 $ cd <ダウンロードフォルダ>/Solution-Starter-Kit-Communication-2020-master/starter-kit/covid-simple
 ```
 
-2.ファイルコピー
+2. ファイルコピー
 
 ```
 $ cp .env.example .env
 ```
 
-3..envファイル編集。以下は私の環境での例です。
+3. .envファイル編集。以下は私の環境での例です。
 
 ```
 # Environment variables
@@ -158,7 +158,7 @@ ASSISTANT_IAM_APIKEY=YYYYY #準備でメモした内容
 ASSISTANT_IAM_URL=https://api.jp-tok.assistant.watson.cloud.ibm.com/instances/ZZZZZ #準備でメモした内容
 ```
 
-4.上記例のように、.envファイルに「ASSISTANT_ID」も追加。「Create your chatbot by setting up a Watson Assistant instance」の7.でメモした内容です。
+4. 上記例のように、.envファイルに「ASSISTANT_ID」も追加。「Create your chatbot by setting up a Watson Assistant instance」の7.でメモした内容です。
 
 ##### Running locally
 PCでテスト稼動します。
@@ -169,13 +169,13 @@ PCでテスト稼動します。
 $ npm install
 ```
 
-2.アプリ起動
+2. アプリ起動
 
 ```
 $ npm start
 ```
 
-3.ブラウザで localhost:3000 を開いてみましょう。チャットボットが動いていればOKです。
+3. ブラウザで localhost:3000 を開いてみましょう。チャットボットが動いていればOKです。
 
 
 ##### Deploy to IBM Cloud as a Cloud Foundry application
@@ -210,7 +210,7 @@ CF API エンドポイント:   https://api.us-south.cf.cloud.ibm.com (API バ�
 スペース:                dev   
 ```
 
-3.covid-simpleディレクトリにあるmanifest.ymlの中身を編集して、「name」の値をユニークなものします。
+3. covid-simpleディレクトリにあるmanifest.ymlの中身を編集して、「name」の値をユニークなものします。
 
 ```
 applications:
@@ -221,7 +221,7 @@ applications:
   instances: 1
 ```
 
-4.アプリをデプロイします。
+4. アプリをデプロイします。
 
 ```
 $ ibmcloud app push
@@ -233,7 +233,7 @@ $ ibmcloud app push
 $ ibmcloud cf install
 ```
 
-5.IBM Cloudのメニュー→リソース・リスト→Cloud Foundryアプリ　にアプリができていると思います。クリックして画面右上の「アプリURLにアクセス」をクリック。チャットボットが表示されていたら完成です。
+5. IBM Cloudのメニュー→リソース・リスト→Cloud Foundryアプリ　にアプリができていると思います。クリックして画面右上の「アプリURLにアクセス」をクリック。チャットボットが表示されていたら完成です。
 
 
 ### ここまでの全体像
