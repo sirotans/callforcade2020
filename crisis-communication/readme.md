@@ -6,8 +6,8 @@
 まず、「Create a COVID crisis chatbot and connect it to data sources」をやってみます。
 出来上がりのイメージは[こちら](https://covid-assistant-simple-sirotan.mybluemix.net)です。
 
-1. [チャットボットの作成](https://github.com/sirotans/callforcode2020/edit/master/crisis-communication/lab1)
-2. [Webへの公開](https://github.com/sirotans/callforcode2020/edit/master/crisis-communication/lab2)
+1. [チャットボットの作成](https://github.com/sirotans/callforcode2020/blob/master/crisis-communication/lab1)
+2. [Webへの公開](https://github.com/sirotans/callforcode2020/blob/master/crisis-communication/lab2)
 
 ### アプリの全体像
 
