@@ -2,8 +2,8 @@
 
 ここでは最初のチャットボットをやってみます。
 画面キャプチャ付きの手順は[こちら](https://developer.ibm.com/callforcode/getstarted/covid-19/crisis-communication/)から。
-下の方にチュートリアルが4つあります。
-まず、「Create a COVID crisis chatbot and connect it to data sources」をやってみます。
+下の方にチュートリアルが4つあります。  
+まず、「Create a COVID crisis chatbot and connect it to data sources」をやってみます。  
 出来上がりのイメージは[こちら](https://covid-assistant-simple-sirotan.mybluemix.net)です。
 
 1. [チャットボットの作成](https://github.com/sirotans/callforcode2020/blob/master/crisis-communication/lab1.md)
