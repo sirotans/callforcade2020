@@ -18,9 +18,9 @@
 - Community corporation: 物資がどこにあるのかを見つけて案内するモバイルアプリ
 
 ### まずは準備
-このスターターキットは、IBM Cloudのクラウド環境とPCでやることが前提になっています。
-準備として、IBM Cloudのアカウントが必要になりますが、ライトアカウントという無料登録が可能なアカウントがあります。
-登録方法は先ほどの[Call for Codeのサイト](https://developer.ibm.com/jp/callforcode/)や、[こちらの記事](https://qiita.com/kmht/items/e77137a4af657777a7f9)をご参考に。
+このスターターキットは、IBM Cloudのクラウド環境とPCでやることが前提になっています。  
+準備として、IBM Cloudのアカウントが必要になりますが、ライトアカウントという無料登録が可能なアカウントがあります。  
+登録方法は先ほどの[Call for Codeのサイト](https://developer.ibm.com/jp/callforcode/)や、[こちらの記事](https://qiita.com/kmht/items/e77137a4af657777a7f9)をご参考に。  
 それから後で必要になるので、この[スターターキット](https://github.com/Call-for-Code/Solution-Starter-Kit-Communication-2020)をgithubからダウンロードしておきましょう。
 
 ### サンプルアプリの作成
