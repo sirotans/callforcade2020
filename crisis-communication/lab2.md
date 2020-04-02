@@ -109,4 +109,4 @@ $ ibmcloud cf install
 5. IBM Cloudのメニュー→リソース・リスト→Cloud Foundryアプリ　にアプリができていると思います。クリックして画面右上の「アプリURLにアクセス」をクリック。チャットボットが表示されていたら完成です。
 
 
-[最初に戻ります。](https://github.com/sirotans/callforcode2020/blob/master/crisis-communication/readme.md)
+[ここまでやった全体像を確認してみましょう](https://github.com/sirotans/callforcode2020/blob/master/crisis-communication/readme.md)
